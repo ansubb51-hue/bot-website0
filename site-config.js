@@ -25,9 +25,9 @@ window.SK_CONFIG = {
   supportServerUrl: "https://discord.gg/EQzG8HQS4N",
 
   /* Privacy / Terms / Contact ke liye. Khaali chhodo to pages par "not set yet" likha aayega. */
-  contactEmail: "",
+  contactEmail: "ansubb51@gmail.com",
   controllerName: "sk_rakesh",       // bot chalane wale ka naam (individual ya team)
-  lastUpdated: "",          // jaise "2026-10-29" — privacy/terms page par dikhega
+  lastUpdated: "29/10/2026",          // jaise "2026-10-29" — privacy/terms page par dikhega
 
   /* Social links (khaali = footer mein nahi dikhenge) */
   social: { youtube: "https://youtube.com/@sk_rakesh7gamer?si=f8k-f6hr2y7k0rGA", instagram: "", github: "https://github.com/ansubb51-hue", x: "", website: "" },
