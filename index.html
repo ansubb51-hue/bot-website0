@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SK1.0 — All-in-one Discord Bot</title>
+<meta name="description" content="SK1.0 is an all-in-one Discord bot: moderation, AutoMod, anti-nuke security, verification, economy, shop, games, XP levels, tickets, giveaways, invite tracking and more.">
+<meta name="theme-color" content="#05070f">
+<meta property="og:title" content="SK1.0 — All-in-one Discord Bot">
+<meta property="og:description" content="Moderation, security, economy, tickets, giveaways and more — in one Discord bot.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-glow"></div><div class="bg-grid"></div><canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="site-nav"></div>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-logo" data-avatar><img src="assets/logo.svg" alt="SK1.0 bot logo" width="128" height="128"></div>
+    <span class="eyebrow">Discord bot · Moderation · Security · Economy</span>
+    <h1><span class="grad">SK1.0</span></h1>
+    <p class="lead">One bot to run your whole server — powerful moderation and AutoMod, anti-nuke security, verification, economy and shop, games, levels, tickets, giveaways and invite tracking.</p>
+    <div class="cta">
+      <a class="btn btn-primary" data-invite href="#">➕ Add to Discord</a>
+      <a class="btn btn-ghost" data-support href="#">💬 Join Support Server</a>
+    </div>
+    <div class="typed-line" aria-hidden="true"><span id="typed"></span><span class="caret">&nbsp;</span></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="reveal">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Live statistics</span><h2>SK1.0 by the numbers</h2>
+      <p>Real numbers only. Anything the bot's host has not reported is clearly shown as <b>Unavailable</b>.</p></div>
+    <div class="grid g5">
+      <div class="card stat"><div class="num na" id="st-servers">Unavailable</div><div class="label">Servers</div><span class="note">loading…</span></div>
+      <div class="card stat"><div class="num na" id="st-users">Unavailable</div><div class="label">Tracked users</div><span class="note">loading…</span></div>
+      <div class="card stat"><div class="num" id="st-commands">—</div><div class="label">Commands</div><span class="note"></span></div>
+      <div class="card stat"><div class="num" id="st-status"><span class="pill na-p"><span class="dot"></span>Checking…</span></div><div class="label">Bot status</div><span class="note"></span></div>
+      <div class="card stat"><div class="num na" id="st-uptime">Unavailable</div><div class="label">Uptime</div><span class="note"></span></div>
+    </div>
+    <p class="stats-foot">Last report: <span id="st-updated">—</span> · <a href="status.html">Open status page</a></p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="kicker">Features</span><h2>Everything your server needs</h2>
+      <p>Every feature below exists in the bot today. Command counts come straight from the bot's source code.</p></div>
+    <div class="grid g3">
+      <article class="card reveal"><div class="ico">🛡️</div><h3>Moderation</h3><p>Full staff toolkit with a permanent case history.</p>
+        <ul class="feat-list"><li>ban, softban, massban, kick, timeout</li><li>warnings, staff notes, cases &amp; mod logs</li><li>purge, slowmode, lock / hide channels</li></ul><span class="feat-count" data-catcount="Moderation"></span></article>
+      <article class="card reveal"><div class="ico">🤖</div><h3>AutoMod, Anti-Spam &amp; Anti-Link</h3><p>Automatic rule enforcement while you sleep.</p>
+        <ul class="feat-list"><li>word filter, caps filter, mention guard</li><li>anti-spam, anti-invite, anti-link with whitelist</li><li>quarantine, raid mode &amp; warn-escalation rules</li><li>one-click presets</li></ul><span class="feat-count" data-catcount="AutoMod"></span></article>
+      <article class="card reveal"><div class="ico">🔒</div><h3>Anti-Nuke &amp; Anti-Raid Security</h3><p>Protect channels, roles and members from attacks.</p>
+        <ul class="feat-list"><li>anti-nuke limits, actions &amp; whitelist</li><li>restore deleted channels / roles</li><li>guards for webhooks, bot-adds &amp; dangerous permissions</li><li>panic / unpanic emergency lockdown</li></ul><span class="feat-count" data-catcount="Security"></span></article>
+      <article class="card reveal"><div class="ico">✅</div><h3>Verification</h3><p>Keep bots and troublemakers out.</p>
+        <ul class="feat-list"><li>verification panel with verify button</li><li>verified / unverified roles</li></ul><span class="feat-count" data-catcount="Verification"></span></article>
+      <article class="card reveal"><div class="ico">👋</div><h3>Welcome, Leave &amp; Server Logs</h3><p>Greet members and keep a record of what happens.</p>
+        <ul class="feat-list"><li>custom welcome and goodbye messages</li><li>log channel for server events</li><li>member counter</li></ul><span class="feat-count" data-catcount="Welcome & Logs"></span></article>
+      <article class="card reveal"><div class="ico">💰</div><h3>Economy, Shop &amp; Trading</h3><p>A full coin economy your members will love.</p>
+        <ul class="feat-list"><li>daily, weekly, work, beg, bank deposit / withdraw</li><li>server shop, inventory, items &amp; roles</li><li>safe player-to-player trading</li><li>leaderboards</li></ul><span class="feat-count" data-catcount="Economy & Shop"></span></article>
+      <article class="card reveal"><div class="ico">🎮</div><h3>Games &amp; Fun</h3><p>Keep your chat active.</p>
+        <ul class="feat-list"><li>slots, coinflip, dice, rock-paper-scissors, trivia</li><li>hunt animals and build a zoo</li><li>8ball, ship, marry, profile cards</li></ul><span class="feat-count" data-catcount="Games & Fun"></span></article>
+      <article class="card reveal"><div class="ico">📈</div><h3>XP, Levels, Missions &amp; Achievements</h3><p>Reward activity with levels and goals.</p>
+        <ul class="feat-list"><li>rank card and XP leaderboard</li><li>level roles, level-up channel, double XP</li><li>missions and achievements with boards</li></ul><span class="feat-count" data-catcount="XP, Levels & Missions"></span></article>
+      <article class="card reveal"><div class="ico">🎭</div><h3>Roles &amp; Reaction Roles</h3><p>Let members pick their own roles.</p>
+        <ul class="feat-list"><li>reaction roles, button roles, role menus</li><li>self-assignable roles &amp; auto-role</li><li>temporary roles</li></ul><span class="feat-count" data-catcount="Roles"></span></article>
+      <article class="card reveal"><div class="ico">🎫</div><h3>Tickets &amp; Applications</h3><p>Professional support and staff recruitment.</p>
+        <ul class="feat-list"><li>ticket panel, claim, close, reopen, transcripts</li><li>auto-close, max tickets, log channel</li><li>application forms with questions &amp; review</li></ul><span class="feat-count" data-catcount="Tickets & Applications"></span></article>
+      <article class="card reveal"><div class="ico">🎁</div><h3>Giveaways</h3><p>Run fair giveaways in seconds.</p>
+        <ul class="feat-list"><li>start, end, pause, resume, reroll</li><li>entry requirements</li></ul><span class="feat-count" data-catcount="Giveaways"></span></article>
+      <article class="card reveal"><div class="ico">🎉</div><h3>Community, Events &amp; Custom Commands</h3><p>Tools to grow an active community.</p>
+        <ul class="feat-list"><li>polls, suggestions, starboard</li><li>scheduled server events</li><li>custom commands, reminders, AFK, snipe</li></ul><span class="feat-count" data-catcount="Community & Events"></span></article>
+      <article class="card reveal"><div class="ico">🔗</div><h3>Invite Tracker</h3><p>Know who is growing your server.</p>
+        <ul class="feat-list"><li>who invited whom, invite leaderboard</li><li>invite rewards (roles, coins, badges)</li><li>suspicious-invite detection &amp; analytics</li></ul><span class="feat-count" data-catcount="Invite Tracker"></span></article>
+      <article class="card reveal"><div class="ico">⚙️</div><h3>Server Settings &amp; Utility</h3><p>Make the bot fit your server.</p>
+        <ul class="feat-list"><li>custom prefix, language, staff roles</li><li>ignore channels / users, command cooldowns</li><li>server, user and bot info, avatar &amp; banner</li></ul><span class="feat-count" data-catcount="Server Settings"></span></article>
+    </div>
+    <p style="text-align:center;margin-top:26px"><a class="btn btn-ghost" href="commands.html">Browse all <span data-total>…</span> commands →</a></p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="kicker">How it works</span><h2>Ready in four steps</h2><p>No coding needed. If you can click a button in Discord, you can set up SK1.0.</p></div>
+    <div class="steps">
+      <div class="card step reveal"><div class="ico">1</div><h3>Invite the bot</h3><p>Press <b>Add to Discord</b>, choose your server and click Authorize. You need the <b>Manage Server</b> permission on that server.</p></div>
+      <div class="card step reveal"><div class="ico">2</div><h3>Give the right permissions</h3><p>Keep the permissions ticked on the invite screen. Then, in <b>Server Settings → Roles</b>, drag the SK1.0 role <b>above</b> the roles it should manage.</p></div>
+      <div class="card step reveal"><div class="ico">3</div><h3>Configure features</h3><p>Start with the help menu, then switch on what you need.<span class="code">!help</span><span class="code">!setlogs #mod-logs</span><span class="code">!automod on</span></p></div>
+      <div class="card step reveal"><div class="ico">4</div><h3>Use commands</h3><p>Default prefix is <b>!</b> — <b>sk </b> also works. <span data-slash>…</span> commands also work as slash commands.<span class="code">!ban @user spamming</span><span class="code">/help</span></p></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);margin-top:18px">Tip: change the prefix any time with <code>!setprefix</code>.</p>
+  </div>
+</section>
+
+<!-- INVITE -->
+<section id="invite" class="reveal">
+  <div class="wrap">
+    <div class="band">
+      <h2>Add SK1.0 to your server</h2>
+      <p>The invite uses Discord's official OAuth2 page. You choose the server and see every permission before you approve. Administrator is <b>not</b> required.</p>
+      <div class="cta"><a class="btn btn-primary" data-invite href="#">➕ Add to Discord</a><a class="btn btn-ghost" data-support href="#">💬 Join Support Server</a></div>
+      <details style="max-width:640px;margin:22px auto 0;text-align:left"><summary>Which permissions does the invite ask for?</summary>
+        <div class="ans">View Channels, Send Messages, Embed Links, Attach Files, Read Message History, Add Reactions, Use External Emojis, Manage Messages, Manage Roles, Manage Channels, Manage Server, Manage Nicknames, Manage Events, Manage Webhooks, Kick Members, Ban Members, Timeout Members, View Audit Log and Create Invite. Features you don't use simply won't need them — you may untick any permission on the Discord screen.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="kicker">About</span><h2>Why SK1.0?</h2>
+      <p>SK1.0 replaces a pile of single-purpose bots with one consistent bot, so staff learn one command style and members get one experience.</p></div>
+    <div class="grid g3">
+      <div class="card reveal"><div class="ico">🧩</div><h3>All-in-one</h3><p>Moderation, security, community and fun in a single bot — fewer bots to manage, fewer permissions to hand out.</p></div>
+      <div class="card reveal"><div class="ico">🔐</div><h3>Safety first</h3><p>Anti-nuke limits, permission and webhook guards, verification and an emergency panic mode protect your server.</p></div>
+      <div class="card reveal"><div class="ico">🧭</div><h3>Easy to learn</h3><p>Built-in <code>!help</code>, clear usage examples for every command and simple prefix or slash commands.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREMIUM (shown only if configured in site-config.js) -->
+<section id="premium" class="reveal">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Support the project</span><h2 id="premium-title"></h2><p id="premium-intro"></p></div>
+    <div class="grid g3" id="premium-grid"></div>
+  </div>
+</section>
+
+<!-- SUPPORT + FAQ -->
+<section id="support">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="kicker">Support</span><h2>Need help?</h2>
+      <p>Check the answers below first. If you are still stuck, ask in the support server.</p>
+      <div class="cta" style="margin-top:16px"><a class="btn btn-primary" data-support href="#">💬 Join Support Server</a></div></div>
+    <div id="faq" style="max-width:820px;margin:0 auto" class="reveal">
+      <details><summary>The bot is online but does not answer my commands</summary><div class="ans">Check that SK1.0 can <b>View Channel</b> and <b>Send Messages</b> in that channel, that you used the right prefix (default <code>!</code> — or <code>sk </code>), and that the channel or your user is not on an ignore list (<code>!ignorechannel</code>, <code>!ignoreuser</code>). Mentioning the bot (for example <code>@SK1.0 help</code>) also works as a prefix.</div></details>
+      <details><summary>Ban / kick / role commands say “missing permissions” or “hierarchy”</summary><div class="ans">Discord only lets a bot manage members and roles that sit <b>below</b> its own highest role. Open <b>Server Settings → Roles</b> and drag the SK1.0 role higher. The bot also needs the matching permission (Ban Members, Kick Members, Manage Roles …).</div></details>
+      <details><summary>Who can use staff commands?</summary><div class="ans">Each command lists the permission it needs on the <a href="commands.html">Commands page</a> (for example <b>Ban Members</b>). Admins can also set staff roles with <code>!setadminrole</code>, <code>!setmodrole</code> and <code>!sethelperrole</code>.</div></details>
+      <details><summary>How do I change the prefix?</summary><div class="ans">Use <code>!setprefix &lt;new prefix&gt;</code>. The prefix <code>sk </code> and mentioning the bot keep working as alternatives. Slash commands do not need a prefix.</div></details>
+      <details><summary>How do I set up welcome messages, logs or tickets?</summary><div class="ans">Welcome: <code>!setwelcome #channel</code> then <code>!welcometest</code>. Logs: <code>!setlogs #channel</code>. Tickets: <code>!ticketpanel</code> in the channel where members should open tickets. Every command has an example on the <a href="commands.html">Commands page</a>.</div></details>
+      <details><summary>Which data does the bot store?</summary><div class="ans">Only what its features need (settings, XP/economy, warnings, tickets, and similar). The full list is in the <a href="privacy.html">Privacy Policy</a>.</div></details>
+      <details><summary>The bot looks offline on this website</summary><div class="ans">This site can only show a status when the bot's host sends reports. If the <a href="status.html">status page</a> says “Not connected” or “No recent report”, it means no report arrived — it does not by itself prove the bot is down. Check whether the bot is online in your Discord member list.</div></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="site-config.js"></script>
+<script src="data/commands.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commands — SK1.0</title>
+<meta name="description" content="Complete list of SK1.0 Discord bot commands with descriptions, usage examples and required permissions.">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="commands">
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-glow"></div><div class="bg-grid"></div><canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="site-nav"></div>
+<main id="main">
+<div class="wrap">
+  <div class="page-head"><h1><span class="grad">Commands</span></h1>
+    <p><span data-total>…</span> commands in 15 categories (<span data-slash>…</span> also work as slash commands). Generated automatically from the bot's source code. Owner-only maintenance commands are not listed.</p>
+    <div class="cta" style="margin-top:18px"><a class="btn btn-primary btn-sm" data-invite href="#">➕ Add to Discord</a></div></div>
+</div>
+<div class="toolbar"><div class="wrap">
+  <input id="cmd-search" class="search" type="search" placeholder="Search commands… (try: ban, ticket, shop, antinuke)" aria-label="Search commands" autocomplete="off">
+  <div class="chips" id="chips" aria-label="Categories"></div>
+</div></div>
+<div class="wrap">
+  <div class="meta-row"><span id="cmd-count" aria-live="polite"></span>
+    <span style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+      <label style="cursor:pointer"><input type="checkbox" id="slash-only"> Slash commands only</label>
+      <span>Prefix: <span class="prefix-switch"><button type="button" class="on" data-p="!">!</button><button type="button" data-p="sk ">sk </button></span></span></span></div>
+  <p style="color:var(--muted);font-size:.88rem;margin:0">Use <code>&lt;angle&gt;</code> for required and <code>[square]</code> for optional values. Servers can change the prefix with <code>!setprefix</code>. “Copy” copies a ready-to-paste example.</p>
+  <div id="cmd-list"><noscript><div class="empty">Please enable JavaScript to browse the command list.</div></noscript></div>
+</div>
+<div style="height:30px"></div>
+</main>
+<div id="site-footer"></div>
+<script src="site-config.js"></script>
+<script src="data/commands.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

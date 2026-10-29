@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — SK1.0</title>
+<meta name="description" content="Privacy Policy of the SK1.0 Discord bot.">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="privacy">
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-glow"></div><div class="bg-grid"></div><canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="site-nav"></div>
+<main id="main"><div class="wrap"><div class="legal">
+<h1><span class="grad">Privacy Policy</span></h1>
+<p>Last updated: <span data-config="lastUpdated"></span></p>
+<div class="notice" id="tpl-notice"><b>Template notice for the site owner:</b> this page is an editable template written from what the bot actually stores. Yellow <span class="ph">[…not set yet]</span> boxes fill in automatically from <code>site-config.js</code>. This text is not legal advice — please read it, adjust it to your situation and local law, and ask a qualified person if unsure. This notice hides itself once contact email, controller name and date are set.</div>
+<p>This Privacy Policy explains what the Discord bot <b>SK1.0</b> (“the bot”) stores and why. The bot is run by <span data-config="controllerName"></span>. Contact: <span data-config-mail></span>.</p>
+
+<h2>1. What the bot stores</h2>
+<p>The bot only stores data that its features need. Depending on which features a server uses, this can include:</p>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Feature</th><th>Data stored</th></tr></thead><tbody>
+<tr><td>Server settings</td><td>Server (guild) ID, prefix, language, chosen channels and roles, feature switches and messages configured by server admins.</td></tr>
+<tr><td>XP, levels, economy, shop, games, animals, marriages</td><td>Discord user ID and server ID with XP, level, coin balance, inventory items, game totals, animals and marriage status.</td></tr>
+<tr><td>Moderation</td><td>Warnings, moderation cases (action, moderator ID, target user ID, reason, time), staff notes, quarantine status, blacklist / whitelist entries.</td></tr>
+<tr><td>Security (anti-nuke, guards)</td><td>Whitelist, saved copies of channel and role structure used for restoring after an attack, and an action log.</td></tr>
+<tr><td>Verification</td><td>A verification log (user ID, result, time).</td></tr>
+<tr><td>Tickets and applications</td><td>Ticket records (channel ID, opener ID, status, claimer). A transcript is created only when a staff member runs the transcript command. Application questions and answers submitted by members.</td></tr>
+<tr><td>Invite tracker</td><td>Invite codes, who joined through which invite, join / leave events and invite rewards.</td></tr>
+<tr><td>Community tools</td><td>Giveaways and entries, reaction / button roles, temporary roles, suggestions, polls, events, custom commands, reminders, AFK status and starboard posts.</td></tr>
+<tr><td>Usage and diagnostics</td><td>Command usage counts, an activity log, error records and performance samples (latency, memory, CPU) used to keep the bot working.</td></tr>
+<tr><td>Web admin panel (if the host enables it)</td><td>Login session identifiers and an audit log of changes made in the panel.</td></tr>
+</tbody></table></div>
+<p>To work, the bot receives Discord events through the permissions and intents it is granted (servers, members and message content). Message content is processed to run commands and AutoMod rules; this site does not claim the bot keeps a copy of normal chat messages beyond what the features above describe.</p>
+
+<h2>2. Why the data is used</h2>
+<ul><li>To provide the bot's commands and features.</li><li>To protect servers (moderation, AutoMod, security, verification).</li><li>To find and fix errors and keep the bot running.</li></ul>
+
+<h2>3. Sharing</h2>
+<p>Data is stored in the bot's own database on the host's computer or server. <span class="ph">[Describe here whether you share data with any third party — if you do not, say so.]</span></p>
+
+<h2>4. How long data is kept</h2>
+<p><span class="ph">[Describe your retention rules here, e.g. how long moderation cases, logs and backups are kept.]</span> Performance samples and automatic backups are rotated by the bot (older ones are deleted automatically).</p>
+
+<h2>5. Your choices and deletion requests</h2>
+<p>Server admins can remove the bot at any time and can reset many settings with the bot's commands. To ask what is stored about you or to request deletion, contact <span data-config-mail></span> and include your Discord user ID and the server ID.</p>
+
+<h2>6. Children</h2>
+<p>Discord requires users to meet its minimum age. The bot is not designed for children below that age.</p>
+
+<h2>7. Security</h2>
+<p>Bot tokens and secrets are kept on the host, never on this website. No system is perfectly secure.</p>
+
+<h2>8. Changes</h2>
+<p>This policy may be updated; the date above shows the latest version.</p>
+
+<h2>9. Contact</h2>
+<p><span data-config="controllerName"></span> — <span data-config-mail></span></p>
+</div></div></main>
+<div id="site-footer"></div>
+<script src="site-config.js"></script>
+<script src="data/commands.js"></script>
+<script src="script.js"></script>
+<script>document.addEventListener("DOMContentLoaded",function(){var c=window.SK_CONFIG||{};if(c.contactEmail&&c.controllerName&&c.lastUpdated){var n=document.getElementById("tpl-notice");if(n)n.remove();}});</script>
+</body>
+</html>

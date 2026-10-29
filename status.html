@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Status — SK1.0</title>
+<meta name="description" content="Live status and uptime of the SK1.0 Discord bot.">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="status">
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-glow"></div><div class="bg-grid"></div><canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="site-nav"></div>
+<main id="main">
+<div class="wrap">
+  <div class="page-head"><h1><span class="grad">Status</span></h1>
+    <p>Online status and uptime are reported by the computer that runs the bot. This website itself is static (GitHub Pages) and cannot run or check a Discord bot on its own.</p></div>
+  <div class="grid g4" style="margin-top:26px">
+    <div class="card stat"><div class="num"><span id="st-status"><span class="pill na-p"><span class="dot"></span>Checking…</span></span></div><div class="label">Bot status</div><span class="note"></span></div>
+    <div class="card stat"><div class="num na" id="st-uptime">Unavailable</div><div class="label">Uptime</div><span class="note"></span></div>
+    <div class="card stat"><div class="num na" id="st-servers">Unavailable</div><div class="label">Servers</div><span class="note"></span></div>
+    <div class="card stat"><div class="num na" id="st-users">Unavailable</div><div class="label">Tracked users</div><span class="note"></span></div>
+  </div>
+  <p class="stats-foot">Last report: <span id="st-updated">—</span></p>
+  <div class="card" style="max-width:820px;margin:26px auto 0">
+    <h3>Services</h3>
+    <div class="svc"><div><b>Discord bot</b><small id="st-svc-bot-detail">Reported by the bot's host</small></div><span id="st-svc-bot"><span class="pill na-p"><span class="dot"></span>Checking…</span></span></div>
+    <div class="svc"><div><b>Command list</b><small>Generated from the bot's source code</small></div><span class="pill ok"><span class="dot"></span>Available</span></div>
+    <div class="svc"><div><b>This website</b><small>Static pages on GitHub Pages</small></div><span class="pill ok"><span class="dot"></span>You are viewing it</span></div>
+  </div>
+  <div class="legal" style="padding-top:26px">
+    <h2>How to read this page</h2>
+    <ul>
+      <li><b>Online</b> — a fresh report arrived and the bot said it is running.</li>
+      <li><b>No recent report</b> — the last report is older than <span id="stale-min">30</span> minutes (or the reporter is switched off). This does <i>not</i> prove the bot is down.</li>
+      <li><b>Not connected / Unavailable</b> — no stats file or API is connected to this website yet, so nothing is shown instead of guessing.</li>
+    </ul>
+    <p>Instead of this page you can also check whether SK1.0 shows as online in your Discord member list. Problems? Ask in the <a data-support href="#">support server</a>.</p>
+  </div>
+</div>
+<script>document.addEventListener("DOMContentLoaded",function(){var n=document.getElementById("stale-min");if(n&&window.SK_CONFIG&&SK_CONFIG.statsStaleMinutes)n.textContent=SK_CONFIG.statsStaleMinutes;});</script>
+</main>
+<div id="site-footer"></div>
+<script src="site-config.js"></script>
+<script src="data/commands.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terms of Service — SK1.0</title>
+<meta name="description" content="Terms of Service of the SK1.0 Discord bot.">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="terms">
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-glow"></div><div class="bg-grid"></div><canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="site-nav"></div>
+<main id="main"><div class="wrap"><div class="legal">
+<h1><span class="grad">Terms of Service</span></h1>
+<p>Last updated: <span data-config="lastUpdated"></span></p>
+<div class="notice" id="tpl-notice"><b>Template notice for the site owner:</b> this page is an editable template written from what the bot actually stores. Yellow <span class="ph">[…not set yet]</span> boxes fill in automatically from <code>site-config.js</code>. This text is not legal advice — please read it, adjust it to your situation and local law, and ask a qualified person if unsure. This notice hides itself once contact email, controller name and date are set.</div>
+<p>By adding or using the Discord bot <b>SK1.0</b> (“the bot”) you agree to these terms. The bot is operated by <span data-config="controllerName"></span>. Contact: <span data-config-mail></span>.</p>
+
+<h2>1. Using the bot</h2>
+<ul><li>You must follow the <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Discord Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>.</li>
+<li>Only people with the right permissions on a server (for example Manage Server) should add or configure the bot.</li>
+<li>Do not use the bot to harass, spam, scam or break the law, and do not try to abuse, overload, reverse-engineer or exploit it.</li></ul>
+
+<h2>2. Server staff responsibility</h2>
+<p>Moderation and security actions (bans, kicks, timeouts, role and channel changes, lockdowns, restores) are carried out because server staff configured or ran them. Server staff are responsible for how they use these tools. Make sure the bot's role is placed correctly and test automatic features before relying on them.</p>
+
+<h2>3. Virtual items</h2>
+<p>Coins, items, XP, animals and other in-bot values are virtual, have no cash value and can be changed, reset or removed (for example to fix bugs or stop abuse).</p>
+
+<h2>4. Availability</h2>
+<p>The bot is provided “as is”. It may be offline, change or lose features, or have bugs. No uptime guarantee is given. The website status page only shows what the host reports.</p>
+
+<h2>5. Removal and blocking</h2>
+<p>The operator may block users or servers that abuse the bot. You can remove the bot from your server at any time.</p>
+
+<h2>6. Data</h2>
+<p>How data is handled is described in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>7. Liability</h2>
+<p><span class="ph">[Add the liability / warranty wording that applies in your country — ask a qualified person.]</span></p>
+
+<h2>8. Changes</h2>
+<p>These terms may change. Continuing to use the bot after a change means you accept the new terms.</p>
+
+<h2>9. Contact</h2>
+<p><span data-config="controllerName"></span> — <span data-config-mail></span></p>
+</div></div></main>
+<div id="site-footer"></div>
+<script src="site-config.js"></script>
+<script src="data/commands.js"></script>
+<script src="script.js"></script>
+<script>document.addEventListener("DOMContentLoaded",function(){var c=window.SK_CONFIG||{};if(c.contactEmail&&c.controllerName&&c.lastUpdated){var n=document.getElementById("tpl-notice");if(n)n.remove();}});</script>
+</body>
+</html>
