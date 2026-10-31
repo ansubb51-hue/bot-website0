@@ -50,5 +50,5 @@ window.SK_CONFIG = {
   statsStaleMinutes: 30,
 
   /* Bot avatar ki image (optional). assets/avatar.png daalo ya full URL. Khaali = SVG logo. */
-  avatarUrl: "https://cdn.discordapp.com/attachments/1545611806121132118/1565295782444273737/file_00000000157081f5b30afffc5b6fafe8.png?ex=6ae462cc&is=6ae3114c&hm=19a2da8e3ee9ab777d42b5a29ab05543c363293ef88369ae7c9bcfd033f2ec68&"
+  avatarUrl: "https://cdn.discordapp.com/attachments/1545611806121132118/1565295782444273737/file_00000000157081f5b30afffc5b6fafe8.png?ex=6ae65d0c&is=6ae50b8c&hm=e6cd4d0f2a736e994dad646b3cd94c712ede9bc7c1171973d67bb0cbef91564c&"
 };
