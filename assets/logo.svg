@@ -1,10 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SK1.0 logo">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1000">
+
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset=".55" stop-color="#f5b942"/><stop offset="1" stop-color="#b9781a"/></linearGradient>
-    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="bg">
+      <stop offset="0%" stop-color="#061d55"/>
+      <stop offset="65%" stop-color="#020817"/>
+      <stop offset="100%" stop-color="#00030a"/>
+    </radialGradient>
+
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00ffff"/>
+      <stop offset="50%" stop-color="#0066ff"/>
+      <stop offset="100%" stop-color="#0033aa"/>
+    </linearGradient>
+
+    <linearGradient id="silver" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#8299c5"/>
+      <stop offset="100%" stop-color="#182b50"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
   </defs>
-  <path d="M64 6 114 32v50c0 20-22 34-50 42C36 116 14 102 14 82V32z" fill="#0b1020" stroke="url(#b)" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M64 16 104 37v44c0 14-17 26-40 33-23-7-40-19-40-33V37z" fill="none" stroke="url(#g)" stroke-width="2" opacity=".8"/>
-  <text x="64" y="76" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="44" fill="url(#g)" letter-spacing="1">SK</text>
-  <text x="64" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="#22d3ee" letter-spacing="3">1.0</text>
+
+  <!-- Background -->
+  <circle cx="500" cy="500" r="490" fill="url(#bg)"/>
+
+  <!-- Neon Circle -->
+  <circle cx="500" cy="500" r="465"
+          fill="none" stroke="#0066ff"
+          stroke-width="15" filter="url(#glow)"/>
+
+  <circle cx="500" cy="500" r="450"
+          fill="none" stroke="#00dfff"
+          stroke-width="3"/>
+
+  <!-- Background Energy -->
+  <ellipse cx="500" cy="470" rx="350" ry="300"
+           fill="#0055ff" opacity=".22"
+           filter="url(#soft)"/>
+
+  <!-- Crown -->
+  <g filter="url(#glow)" stroke="#00bfff" stroke-width="7">
+    <path d="M350 225 L390 115 L455 195
+             L500 65 L545 195 L610 115
+             L650 225 L610 275 L390 275 Z"
+          fill="url(#silver)"/>
+
+    <path d="M390 225 L610 225"
+          stroke="#ffffff" stroke-width="10"/>
+
+    <circle cx="390" cy="115" r="12" fill="#00cfff"/>
+    <circle cx="500" cy="65" r="15" fill="#00cfff"/>
+    <circle cx="610" cy="115" r="12" fill="#00cfff"/>
+  </g>
+
+  <!-- Robot Head -->
+  <g filter="url(#glow)">
+    <rect x="260" y="260" width="480" height="320"
+          rx="105" fill="#07152d"
+          stroke="url(#blue)" stroke-width="18"/>
+
+    <rect x="305" y="300" width="390" height="225"
+          rx="80" fill="#020713"
+          stroke="#245dff" stroke-width="8"/>
+
+    <!-- Eyes -->
+    <path d="M365 390 Q420 340 465 410
+             L435 465 Q380 470 365 390"
+          fill="#00eaff"/>
+
+    <path d="M535 410 Q580 340 635 390
+             Q620 470 565 465 Z"
+          fill="#00eaff"/>
+  </g>
+
+  <!-- Headphones -->
+  <g fill="#071c45" stroke="#00aaff" stroke-width="12">
+    <rect x="230" y="350" width="90" height="150" rx="35"/>
+    <rect x="680" y="350" width="90" height="150" rx="35"/>
+  </g>
+
+  <!-- Hoodie -->
+  <path d="M290 590 Q200 620 160 820
+           L840 820 Q800 620 710 590
+           Q610 700 500 680
+           Q390 700 290 590"
+        fill="#07152d" stroke="#064bba"
+        stroke-width="12"/>
+
+  <!-- SK Branding -->
+  <text x="500" y="750"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-weight="900"
+        font-size="85"
+        fill="#ffffff">SK</text>
+
+  <!-- Main Logo Text -->
+  <text x="500" y="880"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="145"
+        font-weight="900"
+        font-style="italic"
+        fill="url(#blue)"
+        stroke="#00cfff"
+        stroke-width="2"
+        filter="url(#glow)">SK1.0</text>
+
+  <!-- Tagline -->
+  <text x="500" y="925"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="25"
+        font-weight="bold"
+        fill="#ffffff">
+    YOUR DISCORD. BETTER WITH SK1.0.
+  </text>
+
 </svg>
